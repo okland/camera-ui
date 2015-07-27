@@ -8,7 +8,7 @@ There are only three methods in this package :
 ### MeteorCameraUI.getPicture([options], callback)
 
 Prompt the user to take a photo with their device and get the picture as a Data URI in JPEG format.
-On mobile show actionsheet that asks the user whether he wants to take picture or use image gallery.
+On mobile show actionsheet that asks the user whether he wants to take a picture or use image gallery.
 This function expand the Meteor.Camera.getPicture so it allows to specify different options per ios, android or browser.
 
 #### options
