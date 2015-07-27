@@ -1,7 +1,7 @@
 Package.describe({
   name: 'okland:camera-ui',
   version: '0.0.1',
-  summary: 'Meteor Photos User interface with one function call on desktop and mobile. Allows to choose between camera to photoLibrary on mobile.',
+  summary: 'Take photos with UI one function call on desktop and mobile. Choose between camera to photoLibrary.',
   git: 'https://github.com/okland/camera-ui',
   documentation: 'README.md'
 });
