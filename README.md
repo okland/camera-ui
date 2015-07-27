@@ -1,6 +1,6 @@
 # Meteor Camera UI Package
 
-Add it to your [Meteor](http://meteor.com) app with `meteor add okland:camera-ui`. This package is mobile UI expanded version of mdg:camera package.
+Add it to your [Meteor](http://meteor.com) app with `meteor add okland:camera-ui`. This package is mobile UI expanded version of [mdg:camera](https://atmospherejs.com/mdg/camera) package.
 
 There are only three methods in this package :
 
