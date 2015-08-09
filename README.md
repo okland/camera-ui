@@ -2,7 +2,7 @@
 
 Add it to your [Meteor](http://meteor.com) app with `meteor add okland:camera-ui`. This package is mobile UI expanded version of [mdg:camera](https://atmospherejs.com/mdg/camera) package.
 
-There are only three methods in this package :
+There are only four methods in this package :
 
 
 ### MeteorCameraUI.getPicture([options], callback)
@@ -55,6 +55,11 @@ Prompt the user to take a photo with their device and get the picture as a Data 
 - `error` A [Meteor.Error](http://docs.meteor.com/#meteor_error) with a platform-specific error message.
 - `data` A base64-encoded data URI for the image taken by the camera. This parameter can be used directly in the 'src' attribute of an image tag.
 
+
+### MeteorCameraUI.dataURIToBlob(dataURI)
+
+An helper function to convert the dataURI of the image received from camera to blob with specific contentType.
+Commonly used on cordova apps in order to upload the image that was taken.
 
 
 ### MeteorCameraUI.b64toBlob(b64Data, contentType, sliceSize)

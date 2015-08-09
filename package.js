@@ -1,6 +1,6 @@
 Package.describe({
   name: 'okland:camera-ui',
-  version: '0.0.1',
+  version: '0.0.2',
   summary: 'Take photos with UI one function call on desktop and mobile. Choose between camera to photoLibrary.',
   git: 'https://github.com/okland/camera-ui',
   documentation: 'README.md'

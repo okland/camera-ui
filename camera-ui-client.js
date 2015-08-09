@@ -1,12 +1,33 @@
 /**
  * Helper function for uploading base 64 image to server.
+ * @summary Take JPEG image dataURI and return blob of the given content type
+ * @returns {Blob}
+ */
+MeteorCameraUI.dataURIToBlob = function (dataURI) {
+  // Check that input exists
+  if (!dataURI) {
+    return;
+  }
+  //
+  var splitedDataURI = dataURI.split(',');
+  // Split the image base64 from dataURI
+  if (!splitedDataURI || splitedDataURI.length < 2) {
+    return;
+  }
+  var base64 = splitedDataURI[1];
+  return MeteorCameraUI.b64toBlob(base64, 'image/jpeg');
+};
+
+
+/**
+ * Helper function for uploading base 64 image to server.
  * @summary Take base 64 data and return blob of the given content type
  * @param b64Data
  * @param contentType
  * @param sliceSize
- * @returns {*}
+ * @returns {Blob}
  */
-MeteorCameraUI.b64toBlob = function(b64Data, contentType, sliceSize) {
+MeteorCameraUI.b64toBlob = function (b64Data, contentType, sliceSize) {
   contentType = contentType || '';
   sliceSize = sliceSize || 512;
 
