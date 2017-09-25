@@ -58,6 +58,8 @@ var takePicture = function (options, usingPhotoLibrary, callback) {
   var pictureOptions = getOptionsPerDevice(options);
   if (usingPhotoLibrary) {
     pictureOptions.sourceType = Camera.PictureSourceType.PHOTOLIBRARY;
+  } else {
+    pictureOptions.sourceType = Camera.PictureSourceType.CAMERA;
   }
   MeteorCamera.getPicture(pictureOptions, callback);
 };
